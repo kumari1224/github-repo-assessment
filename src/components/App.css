@@ -1,0 +1,47 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+  /* border-collapse: separate !important;
+  border-spacing: 0; */
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 20px;
+  font-size: 18px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.placeAtCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.height100vh {
+  height: 100vh;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.listTable table {
+  width: 70%;
+}
+
+.linkDecorate {
+  color: #0969da;
+  text-decoration: none;
+}
+
+.linkDecorate:hover {
+  color: #0a53aa;
+  text-decoration: underline;
+}

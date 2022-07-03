@@ -1,0 +1,24 @@
+.customTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.customTable td,
+.customTable th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.customTable thead td {
+    font-weight: 500;
+}
+
+.customTable tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.tableNoDataFound td {
+    border: none;
+}
