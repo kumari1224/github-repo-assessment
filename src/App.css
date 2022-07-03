@@ -18,13 +18,13 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-.placeAtCenter {
+.place-at-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.height100vh {
+.height-100-vh {
   height: 100vh;
 }
 
@@ -36,12 +36,12 @@ tr:nth-child(even) {
   width: 70%;
 }
 
-.linkDecorate {
+.link-decorate {
   color: #0969da;
   text-decoration: none;
 }
 
-.linkDecorate:hover {
+.link-decorate:hover {
   color: #0a53aa;
   text-decoration: underline;
 }

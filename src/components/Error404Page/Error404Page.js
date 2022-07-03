@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 function Error404() {
     return (
-        <div className='placeAtCenter height100vh'>
-            <div className='error404Container'>
+        <div className='place-at-center height-100-vh'>
+            <div className='error-404-main'>
                 <h1>404</h1>
                 <h2>page not found</h2>
                 <div>
-                    Please visit our <Link to="/" className='linkDecorate'>HOME PAGE</Link>
+                    Please visit our <Link to="/" className='link-decorate'>HOME PAGE</Link>
                 </div>
             </div>
 

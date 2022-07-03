@@ -17,6 +17,6 @@ export const tableRowData = [
         type: "link",
         url: detail=>`/github-repo-details/${detail.name || ""}`,
         text: "url",
-        customClass: "linkDecorate"
+        customClass: "link-decorate"
     }
 ]

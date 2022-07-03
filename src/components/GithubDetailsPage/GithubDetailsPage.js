@@ -9,8 +9,6 @@ function GithubDetails() {
     const { reponame } = useParams();
     const [state, setState] = useDataFetch(null, `${GET_GITHUB_REPO_URL}${reponame}`);
 
-    console.log(reponame);
-
     useEffect(() => {
         setState();
     }, []);
@@ -20,7 +18,7 @@ function GithubDetails() {
     }
 
     return (
-        <div className="placeAtCenter">
+        <div className="place-at-center">
             {state && state.data ? <div>
                 <h2>{state.full_name}</h2>
                 <table>

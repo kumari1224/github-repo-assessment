@@ -20,7 +20,7 @@ function List() {
     return (
         <div className="listContainer">
             <h2 className='textCenter'>Github Repositories</h2>
-            <div className='listTable placeAtCenter'>
+            <div className='listTable place-at-center'>
                 <Table
                     tbodyData={state.data}
                     customClass="listTableMain"
