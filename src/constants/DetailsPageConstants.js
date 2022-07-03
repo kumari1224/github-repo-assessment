@@ -3,7 +3,7 @@ export const headerData = [
     "Details"
 ];
 
-// Note : I can use unique ID generator for every row but for sake of 
+// Note : I can use unique ID generator for every row cell but for sake of 
 // simplicity I am using constant key values
 export const tableRowData = [
     {

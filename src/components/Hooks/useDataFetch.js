@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-function useDataFetch(initialState) {
+function useDataFetch(initialState, url) {
     const [state, setState] = useState({ data: initialState, loading: false });
 
-    const fetchDataHandler = (url) => {
+    const fetchDataHandler = () => {
         setState(prev => ({ ...prev, loading: true }));
         fetch(url)
             .then(res => res.json())

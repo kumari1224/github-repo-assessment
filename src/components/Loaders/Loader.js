@@ -1,5 +1,5 @@
 import React from 'react';
-import './LoaderScreen.css';
+import './Loader.css';
 
 function Loader({ customClass }) {
     return (
