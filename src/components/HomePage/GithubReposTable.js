@@ -29,6 +29,7 @@ function GithubReposTable({ list }) {
             <Link
               to={`/github-repo-details/${rowData.name}`}
               className="link-decorate"
+              target="_blank"
             >
               See More Details
             </Link>
