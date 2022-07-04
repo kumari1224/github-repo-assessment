@@ -1,28 +1,28 @@
-.error-page-main {
+.not-found-main {
     position: relative;
     height: 100vh;
 }
 
-.error-page-main .error-page-wrap {
+.not-found-main .not-found-wrap {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-.error-page-wrap {
+.not-found-wrap {
     max-width: 410px;
     width: 100%;
     text-align: center;
 }
 
-.error-page-wrap .error-page-content {
+.not-found-wrap .not-found-404 {
     height: 320px;
     position: relative;
     z-index: -1;
 }
 
-.error-page-wrap .error-page-content h1 {
+.not-found-wrap .not-found-404 h1 {
     font-size: 230px;
     margin: 0px;
     font-weight: 900;
@@ -37,7 +37,7 @@
 }
 
 
-.error-page-wrap h2 {
+.not-found-wrap h2 {
     color: #000;
     font-size: 24px;
     font-weight: 700;
@@ -45,7 +45,7 @@
     margin-top: 0;
 }
 
-.error-page-wrap p {
+.not-found-wrap p {
     color: #000;
     font-size: 16px;
     font-weight: 400;
@@ -53,7 +53,7 @@
     margin-top: 0px;
 }
 
-.error-page-wrap a {
+.not-found-wrap a {
     font-size: 14px;
     text-decoration: none;
     text-transform: uppercase;
@@ -68,11 +68,11 @@
 
 
 @media only screen and (max-width: 800px) {
-    .error-page-wrap .error-page-content {
+    .not-found-wrap .not-found-404 {
         height: 142px;
     }
 
-    .error-page-wrap .error-page-content h1 {
+    .not-found-wrap .not-found-404 h1 {
         font-size: 112px;
     }
 }

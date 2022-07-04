@@ -1,9 +1,6 @@
 table {
   border-collapse: collapse;
   width: 100%;
-
-  /* border-collapse: separate !important;
-  border-spacing: 0; */
 }
 
 td,
@@ -37,8 +34,9 @@ tr:nth-child(even) {
 }
 
 .link-decorate {
-  color: #0969da;
+  color: #6573d0;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .link-decorate:hover {

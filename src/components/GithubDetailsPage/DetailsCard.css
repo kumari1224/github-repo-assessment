@@ -1,0 +1,245 @@
+/*** CARD STYLES ***/
+.cards-container {
+    width: 793px;
+    max-width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    float: left;
+    margin: 3rem;
+}
+
+.details-card {
+    position: relative;
+    width: 400px;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.details-card header {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #ce87ce;
+    border-radius: 10px;
+}
+
+.details-card header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: inherit;
+    transform: skewY(8deg);
+    transform-origin: 0 100%;
+    border-top-left-radius: 10px
+}
+
+.details-card header .avatar {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    margin-left: -50px;
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #ccc;
+    border: 3px solid #fff;
+}
+
+.details-card header .avatar img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: auto;
+}
+
+.details-card h3 {
+    position: relative;
+    margin: 80px 0 30px;
+    text-align: center;
+}
+
+.details-card h3::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 1px;
+    background: #000;
+}
+
+.details-card .desc {
+    padding: 0.5rem 0rem 1rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #777;
+}
+
+.details-card .contacts {
+    width: 200px;
+    max-width: 100%;
+    margin: 0 auto 3.5rem;
+}
+
+.details-card .contacts a {
+    display: block;
+    width: 33.333333%;
+    float: left;
+    text-align: center;
+    color: #ce87ce;
+}
+
+.details-card .contacts a:hover {
+    color: #333;
+}
+
+.details-card .contacts a:hover .details-desc::before {
+    color: #fff;
+}
+
+.details-card .contacts a:hover .details-desc::after {
+    top: 0;
+}
+
+.details-card .contacts a .details-desc {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    line-height: 39px;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid #ce87ce;
+    border-radius: 50%;
+}
+
+.details-card .contacts a .details-desc:before {
+    position: relative;
+    z-index: 1;
+}
+
+.details-card .contacts a .details-desc::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: top 0.3s;
+    background: #ce87ce;
+}
+
+.details-card .contacts a:last-of-type .details-desc {
+    line-height: 36px;
+}
+
+.details-card footer {
+    position: relative;
+    height: 60px;
+    background-color: #6573d0;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.details-card footer .section {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.details-card footer .section .details-desc {
+    padding: 4px 1rem;
+    color: #e2e2e2;
+    transition: color 0.4s;
+}
+
+.details-card footer .section .details-desc:hover {
+    color: #ce87ce;
+}
+
+.details-card footer::before {
+    z-index: 0;
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: inherit;
+    transform: skewY(6deg);
+    transform-origin: 100%;
+    border-bottom-right-radius: 10px;
+}
+
+.details-card-name {
+    text-transform: capitalize;
+}
+
+.details-desc {
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.details-main-body {
+    padding: 0px 10px;
+}
+
+.details-visit-link {
+    text-align: center;
+}
+
+.details-visit-link a {
+    text-decoration: none;
+    color: #6573d0;
+    font-weight: bold;
+}
+
+.details-languages {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.languages-tag {
+    border: 2px solid #ce87ce;
+    border-radius: 15px;
+    color: #ce87ce;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 800px) {
+    .card {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .details-card {
+        width: 300px;
+    }
+
+    .details-card footer {
+        height: 90px;
+    }
+}
