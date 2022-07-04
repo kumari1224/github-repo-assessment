@@ -31,8 +31,9 @@
 
 .ReactVirtualized__Table__headerRow {
     padding-right: 0px !important;
-    background-color: #e2e2e2;
+    background-color: #eaeaea;
     border: 2px solid #d0cccc;
+    color: #595454;
 }
 
 
