@@ -5,10 +5,8 @@
     margin-right: 20px;
 }
 
-.github-repo-table-row, 
-.ReactVirtualized__Table__headerColumn {
+.github-repo-table-row {
     display: flex;
-    padding: 0px 20px;
     border-right: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
     height: 60px;
@@ -24,34 +22,23 @@
     font-size: 1.1rem;
 }
 
-.ReactVirtualized__Table__row,
-.ReactVirtualized__Table__headerRow {
-    display: flex;
-    background-color: #fafafa;
-}
-
-.ReactVirtualized__Grid.ReactVirtualized__List {
-    border-radius: 10px;
-}
-
-.ReactVirtualized__Grid__innerScrollContainer {
+.github-repos-table-main .ReactVirtualized__Table__Grid {
     border: 2px solid #e0e0e0;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     box-shadow: 0 16px 15px 6px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.ReactVirtualized__Table__headerRow {
+    padding-right: 0px !important;
+    background-color: #e2e2e2;
+    border: 2px solid #d0cccc;
 }
 
 
 .github-repo-table-content {
     display: flex;
     width: 100%;
-}
-
-.github-repo-table-content div:nth-child(1) {
-    flex: 1;
-}
-
-.github-repo-table-content div:nth-child(2) {
-    flex: 2;
 }
 
 .github-repo-table-row:nth-child(even) {
@@ -69,7 +56,7 @@
     cursor: default;
 }
 
-.github-repo-table-row:hover a{
+.github-repo-table-row:hover a {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
 }
@@ -77,6 +64,10 @@
 .github-repo-name {
     text-transform: capitalize;
     font-weight: 500;
+}
+
+.github-repo-table-row > div {
+    padding-left: 10px;
 }
 
 @media only screen and (max-width: 800px) {

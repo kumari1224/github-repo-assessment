@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
-import { headerData, tableRowData } from "../../Constants/ListContants";
 import { GET_GITHUB_REPO_LIST_URL } from "../../Constants/Constants";
-import Table from "../table/Table";
 import useDataFetch from "../Hooks/useDataFetch";
 import Loader from "../Loaders/Loader";
 import GithubReposTable from "./GithubReposTable";
