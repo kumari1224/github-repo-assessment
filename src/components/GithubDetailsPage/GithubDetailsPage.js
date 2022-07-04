@@ -5,7 +5,6 @@ import Loader from "../Loaders/Loader";
 import { GET_GITHUB_REPO_URL } from "../../Constants/Constants";
 import Header from "../Header/Header";
 import DetailsCard from "./DetailsCard";
-import "./GithubDetailsPage.css";
 
 function GithubDetails() {
   const { reponame } = useParams();

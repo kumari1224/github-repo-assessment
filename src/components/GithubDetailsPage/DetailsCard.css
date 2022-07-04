@@ -1,4 +1,3 @@
-/*** CARD STYLES ***/
 .cards-container {
     width: 793px;
     max-width: 100%;
@@ -8,7 +7,6 @@
 }
 
 .card {
-    float: left;
     margin: 3rem;
 }
 
@@ -92,14 +90,6 @@
     width: 200px;
     max-width: 100%;
     margin: 0 auto 3.5rem;
-}
-
-.details-card .contacts a {
-    display: block;
-    width: 33.333333%;
-    float: left;
-    text-align: center;
-    color: #ce87ce;
 }
 
 .details-card .contacts a:hover {
@@ -231,10 +221,10 @@
 
 @media only screen and (max-width: 800px) {
     .card {
-        float: none;
         margin-left: auto;
         margin-right: auto;
     }
+
     .details-card {
         width: 300px;
     }

@@ -1,18 +1,15 @@
 import React, { useCallback } from "react";
-import { List, AutoSizer, Table, Column } from "react-virtualized";
+import { AutoSizer, Table, Column } from "react-virtualized";
 import { Link } from "react-router-dom";
 import { formatName } from "../../global/methods";
+import { TABLE_LIST_HEIGHT, TABLE_ROW_HEIGHT } from '../../Constants/Constants';
 import "./GithubReposTable.css";
 import "react-virtualized/styles.css";
-
-const listHeight = 600;
-const rowHeight = 60;
 
 function GithubReposTable({ list }) {
   const cellRenderer = useCallback(
     (props) => {
       const { key, style, rowData } = props;
-      console.log(props);
       return (
         <div key={key} style={style} className="github-repo-table-row">
           <div className="image" style={{ width: style.width * 0.2 }}>
@@ -48,9 +45,9 @@ function GithubReposTable({ list }) {
         {({ width }) => (
           <Table
             width={width}
-            height={listHeight}
+            height={TABLE_LIST_HEIGHT}
             headerHeight={40}
-            rowHeight={rowHeight}
+            rowHeight={TABLE_ROW_HEIGHT}
             rowCount={list.length}
             rowGetter={({ index }) => list[index]}
             rowRenderer={cellRenderer}
@@ -61,8 +58,8 @@ function GithubReposTable({ list }) {
               dataKey="avatar_url"
               style={{ textAlign: "center" }}
             />
-            <Column width={width * 0.4} label="Name" dataKey="name" />
-            <Column width={width * 0.4} label="Github Repo URL" dataKey="url" />
+            <Column width={width * 0.4} label="Repository Name" dataKey="name" />
+            <Column width={width * 0.4} label="Github Repository URL" dataKey="url" />
           </Table>
         )}
       </AutoSizer>

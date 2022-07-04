@@ -1,6 +1,7 @@
 import React from 'react';
 import ErrorPage from './ErrorPage';
 
+// Error Boundary Component to catch the errors and display a fallback
 class ErrorBoundary extends React.Component {
     constructor(props) {
         super(props);
@@ -17,6 +18,7 @@ class ErrorBoundary extends React.Component {
 
     render() {
         if (this.state.hasError) {
+            // Error Boundary Fallback component
             return <ErrorPage />
         }
         return this.props.children;

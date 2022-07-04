@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+// Custom Hook to fetch the data async as well as display the loader
 function useDataFetch(initialState, url) {
     const [state, setState] = useState({ data: initialState, loading: false });
 

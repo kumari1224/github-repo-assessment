@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { formatName, getTokens } from "../../global/methods";
 import "./DetailsCard.css";
 
 function DetailsCard({ data }) {
-  const languages = getTokens(data.language);
+  const languages = useMemo(() => getTokens(data.language), [data.language]);
 
   return (
     <div className="">

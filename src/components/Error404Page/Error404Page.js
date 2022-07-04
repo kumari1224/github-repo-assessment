@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Error404Page.css";
 
+// ERROR 404 component for all the unrouted pages
 function Error404() {
   return (
     <div className="not-found-main">
